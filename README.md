@@ -1,6 +1,8 @@
 cycle-themes.el
 ===============
 
+(Forked from https://github.com/toroidal-code/cycle-themes.el just to change the `C-c C-t` binding for cycling themes.)
+
 Because switching between your themes shouldn't be so damn hard
 
 How it works
@@ -17,7 +19,7 @@ Define a list of themes you want to be able to switch between. Then, enable the 
 
 ```
 
-That's it! Now, you can switch between your themes by calling `M-x cycle-themes`, or with the (easily re-definable) binding of `C-c C-t`.
+That's it! Now, you can switch between your themes by calling `M-x cycle-themes`.
 
 If you use [use-package](https://github.com/jwiegley/use-package), it'll look something like this:
 

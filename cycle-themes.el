@@ -25,6 +25,7 @@
 ;;     (cycle-themes-mode)
 ;;
 ;; `cycle-themes' is bound to 'C-c C-t' by default.
+;;  Update:  Not bound to anything right now.
 ;;
 ;; You can optionally add hooks to be run after switching themes:
 ;;
@@ -122,9 +123,9 @@
 (define-minor-mode cycle-themes-mode
   "Minor mode for cycling between themes."
   :lighter ""
-  :keymap (let ((map (make-sparse-keymap)))
-            (define-key map (kbd "C-c C-t") 'cycle-themes)
-            map)
+  ;; :keymap (let ((map (make-sparse-keymap)))
+  ;;           (define-key map (kbd "C-c C-t") 'cycle-themes)
+  ;;           map)
   :global t
   (progn
     ;; remove any lingering themes other than the primary
