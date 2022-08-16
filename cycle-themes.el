@@ -85,7 +85,7 @@
   "Get the next valid theme from the list."
   ;; save our starting theme for a infinite-loop check
   ;; if there's no theme applied,
-  (let* ((start-theme (or (first custom-enabled-themes)
+  (let* ((start-theme (or (cl-first custom-enabled-themes)
                           (car (last cycle-themes-theme-list))))
          (current-theme start-theme))
     ;; do-while
@@ -108,7 +108,7 @@
   "Cycle to the next theme."
   (interactive)
   (let ((new-theme (cycle-themes-get-next-valid-theme))
-        (current-theme (first custom-enabled-themes))
+        (current-theme (cl-first custom-enabled-themes))
         (current-theme-set custom-enabled-themes))
     ;; disable the current theme only if we want multiple themes
     ;; and we had it before
